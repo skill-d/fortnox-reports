@@ -1,0 +1,14 @@
+{
+  "name": "fortknox-report",
+  "version": "1.0.0",
+  "description": "A simple Annual Report Generator",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "live-server --port=9090 --host=localhost --entry-file=index.html"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}

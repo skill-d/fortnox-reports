@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Fortnox Report</title>
+    <meta name="description" content="Fortnox Annual Report">
+    <meta name="author" content="Abraham">
+
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+
+<body>
+    <a href="https://github.com/skill-d/fortnox-reports.git"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67"
+            alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
+
+    <div class="main-body">
+        <label class="fileContainer">
+            Upload Result Report
+            <input type="file" id="annualReport" accept=".txt" placeholder="Upload Annual Report" class="inputfile" onchange="handleFiles(this.files, 'annual')">
+        </label>
+
+        <p id="annualReportFileName"></p>
+        <label class="fileContainer">
+            Upload General Ledger
+            <input type="file" id="generalReport" accept=".txt" placeholder="Upload General Report" class="inputfile" onchange="handleFiles(this.files, 'general')">
+        </label>
+        <p id="generalReportFileName"></p>
+
+        <button class="btn" id="generate">Generate Annual Report</button>
+
+        <p id="error-message"></p>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
